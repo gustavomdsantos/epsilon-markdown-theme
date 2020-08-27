@@ -1,4 +1,28 @@
 <style>
+  @font-face {
+    font-family: 'TimesNewRomanFont';
+    src: local(Times), url('http://rawcdn.githack.com/gustavosotnas/epsilon-markdown-theme/75fc86d0c018ed51548a313ea9b2f7745714eab4/src/times.ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face {
+    font-family: 'TimesNewRomanFont';
+    src: local(Times), url('http://rawcdn.githack.com/gustavosotnas/epsilon-markdown-theme/75fc86d0c018ed51548a313ea9b2f7745714eab4/src/timesi.ttf');
+  font-weight: normal;
+  font-style: italic;
+  }
+  @font-face {
+    font-family: 'TimesNewRomanFont';
+    src: local(Times), url('http://rawcdn.githack.com/gustavosotnas/epsilon-markdown-theme/75fc86d0c018ed51548a313ea9b2f7745714eab4/src/timesbd.ttf');
+  font-weight: bold;
+  font-style: normal;
+  }
+  @font-face {
+    font-family: 'TimesNewRomanFont';
+    src: local(Times), url('http://rawcdn.githack.com/gustavosotnas/epsilon-markdown-theme/75fc86d0c018ed51548a313ea9b2f7745714eab4/src/timesbi.ttf');
+  font-weight: bold;
+  font-style: italic;
+  }
   body { margin: 10mm; text-align: justify; }
   @media screen and (orientation: portrait) {
     body { margin: 3mm; }
@@ -6,7 +30,7 @@
   @media screen and (orientation: landscape) and (min-width: 1200px) {
     body { width: 980px; margin-left: auto; margin-right: auto; }
   }
-  body > * { font-family: Times, Arial, sans-serif, serif !important; }
+  body > * { font-family: 'TimesNewRomanFont', sans-serif !important; }
   h1, h2, h3, h4, h5, h6 { color: steelblue !important; font-variant: small-caps; margin-top:0px !important; }
   h1 { font-size: 2em; text-align: center; }
   h2 { font-size: 1.75em; }
