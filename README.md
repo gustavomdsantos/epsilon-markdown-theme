@@ -60,7 +60,7 @@ _This way can override all custom styles that was previously in `style.less` fil
 
 It is possible to use **Epsilon** in Markdown files generating HTML with inline CSS. It works only on Markdown parsers that doesn't sanitize inline CSS in Markdown files (see the list of most Markdown parsers [here](https://www.w3.org/community/markdown/wiki/MarkdownImplementations)).
 
-1. Copy all text in `epsilon.snippet.html` file that you downloaded here and paste in the beggining of your Markdown file.
+1. Copy all text in `epsilon.html` file that you downloaded here and paste in the beggining of your Markdown file.
 2. Parse your Markdown file.
 3. Enjoy!
 
@@ -140,7 +140,7 @@ _Este modo pode sobrescrever todos os estilos customizados que estavam previamen
 
 É possível usar o **Epsilon** em arquivos Markdown gerando HTML com CSS _inline_. Isto funciona apenas em conversores Markdown que não fazem sanitização de CSS _inline_ em arquivos Markdown (veja a lista dos principais conversores Markdown [aqui](https://www.w3.org/community/markdown/wiki/MarkdownImplementations)).
 
-1. Copie todo o texto no arquivo `epsilon.snippet.html` que você baixou aqui e cole no início do seu arquivo Markdown.
+1. Copie todo o texto no arquivo `epsilon.html` que você baixou aqui e cole no início do seu arquivo Markdown.
 2. Converta o seu arquivo Markdown.
 3. Divirta-se!
 
