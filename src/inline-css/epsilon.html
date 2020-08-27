@@ -1,5 +1,12 @@
 <style>
-  body > * { font-family: Times, serif !important; }
+  body { margin: 10mm; text-align: justify; }
+  @media screen and (orientation: portrait) {
+    body { margin: 3mm; }
+  }
+  @media screen and (orientation: landscape) and (min-width: 1200px) {
+    body { width: 980px; margin-left: auto; margin-right: auto; }
+  }
+  body > * { font-family: Times, Arial, sans-serif, serif !important; }
   h1, h2, h3, h4, h5, h6 { color: steelblue !important; font-variant: small-caps; margin-top:0px !important; }
   h1 { font-size: 2em; text-align: center; }
   h2 { font-size: 1.75em; }
@@ -7,14 +14,17 @@
   h4 { font-size: 1.25em; }
   h5 { font-size: 1.125em; }
   h6 { font-size: 1em; }
-  p { text-indent: 2em; text-align: justify; }
-  blockquote, pre { padding: 1em !important; }
-  blockquote { background: #eee; border-left: 1em solid #d6d6d6 !important; margin-left: 0px !important; }
-  blockquote > p, section.footnotes p { text-indent: initial; color: initial; }
+  p { text-indent: 2em; }
+  figure, blockquote { margin-left: initial; margin-right: initial; }
+  blockquote, pre { padding: 3mm !important; }
+  blockquote { background: #eee; border-left: 1em solid #d6d6d6 !important; width: fit-content;- }
+  blockquote > p, section.footnotes p { text-indent: initial; color: initial; margin: 0px; }
   p img { display: block; border: solid #ccc 1px; width: max-content; margin-left: auto; margin-right: auto; }
   pre { border-radius: 1em !important; }
   pre span { font-family: inherit; }
-  pre, table { width: max-content; }
-  table > tbody tr:nth-child(even) { background-color: #eee; }
+  pre, table { width: 100%; text-align: initial; }
+  th, td { padding: 3mm; }
+  table > tbody tr:nth-child(even) { background-color: #f5f5f5; }
+  th { background-color: #d6d6d6; }
   blockquote, img, pre, table { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
 </style>
