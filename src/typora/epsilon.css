@@ -1,95 +1,152 @@
 /* Epsilon Markdown Theme for Typora */
-
 /* Author: Gustavo Moraes <gustavosotnas1@gmail.com> */
 
 #write {
-    max-width: 990px;
-    padding-top: 20px;
+    max-width: 1200px;
+    padding-top: 1em;
 }
+html { font-size: 19px; }
+body { font-family: Times, serif; }
 
-html {
-  font-size: 19px;
+#typora-sidebar,
+#typora-quick-open,
+.context-menu,
+.megamenu-content,
+.dropdown-menu,
+.ty-preferences,
+.ty-tooltip,
+.code-tooltip,
+.md-notification,
+.md-toc-tooltip,
+.modal, .popover,
+header, footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-
-body {
-  font-family: Times, serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  color: steelblue;
-  font-variant: small-caps;
-  margin-top: 0px;
+    color: steelblue;
+    font-variant: small-caps;
+    margin-top: 0px;
 }
-
+a {
+    color: steelblue;
+    text-decoration: none;
+}
 h1 {
-  font-size: 5em;
-  text-align: center;
+    font-size: 3em;
+    text-align: center;
 }
-
-h2 {
-  font-size: 1.75em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.25em;
-}
-
-h5 {
-  font-size: 1.125em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
 p {
-  text-indent: 2em;
-  text-align: justify;
+    text-indent: 2em;
+    text-align: justify;
 }
-
-blockquote, pre {
-  padding: 1em;
-}
+blockquote, .md-fences { padding: 1em; }
 
 blockquote {
-  background: #eee;
-  border-left: 1em solid #d6d6d6;
-  margin-left: 0px;
+    background: #eee;
+    border-left: 1em solid #d6d6d6;
+    margin-left: 0px;
 }
-
-blockquote>p, section.footnotes p {
-  text-indent: initial;
-  color: initial;
+blockquote > p, 
+section.footnotes p, 
+li p, 
+li {
+    text-indent: initial;
+    color: initial;
 }
+.md-inline-math,
+.md-math-block,
+.md-mathjax-midline { text-indent: 0; }
 
 p img {
-  display: block;
-  border: solid #ccc 1px;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    border: solid #ccc 0.05em;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+code {
+    background-color: #f0f0f0;
+    padding: 0.11em 0.21em;
+    border-radius: 0.21em;
 }
 
-pre {
-  border-radius: 1em;
+code, pre, .md-raw-inline {
+    font-family: 'Fira Code', Inconsolata, Menlo, 'Cascadia Code', 'Source Code Pro', Consolas, 'Courier New', ui-monospace, monospace;
+    font-size: .9em;
 }
 
-pre span {
-  font-family: inherit;
+.md-fences {
+    background-color: #f7f7f7;
+    border-radius: 1em;
+    margin: 1em 0;
 }
+.md-fences span { font-family: inherit; }
 
-pre, table {
-  width: max-content;
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
 }
-
-table>tbody tr:nth-child(even) {
-  background-color: #eee;
+table th, table td {
+    border: 0.05em solid #ddd;
+    padding: 0.42em 0.68em;
 }
+table th {
+    font-weight: bold;
+    background-color: #eee;
+}
+table>tbody tr:nth-child(even) { background-color: #f7f7f7; }
 
-blockquote, img, pre, table {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+blockquote, img {
+    box-shadow: 0 0.21em 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#typora-sidebar .outline-item { margin: 0; }
+#typora-sidebar .outline-item:hover { border: 0; }
+.label-input-group, .about-content-icon > img { box-shadow: none; }
+.md-diagram-panel-preview > svg, .md-diagram-panel > svg {
+    max-width: initial !important;
+    height: initial !important;
+}
+@media print
+{
+    html { font-size: 0.63em !important; }
+
+    #write {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    table {
+        width: 100% !important;
+        max-width: 100% !important;
+        table-layout: auto;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    mjx-container,
+    .mjx-chtml,
+    .MathJax,
+    .MathJax_SVG,
+    .md-inline-math,
+    .md-math-block {
+        display: inline-block !important;
+        overflow: visible !important;
+        max-width: 100% !important;
+    }
+    mjx-container svg,
+    .MathJax svg,
+    .MathJax_SVG svg,
+    .md-inline-math svg {
+        display: inline-block !important;
+        overflow: visible !important;
+        vertical-align: 50%; !important;
+    }
+    .md-fences, .md-diagram-panel, blockquote, img {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
 }
