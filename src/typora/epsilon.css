@@ -111,6 +111,10 @@ blockquote, img {
     max-width: initial !important;
     height: initial !important;
 }
+footer {
+    background-color: transparent;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.95);
+}
 @media print
 {
     html { font-size: 0.63em !important; }
